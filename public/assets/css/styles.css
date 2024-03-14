@@ -1,3 +1,4 @@
+/* Global Styles */
 html,
 body {
   height: 100%;
@@ -5,6 +6,7 @@ body {
   padding: 0;
 }
 
+/* Class Styles */
 .save-note, .new-note, .clear-btn {
   display: none;
 }
