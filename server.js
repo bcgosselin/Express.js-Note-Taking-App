@@ -3,12 +3,30 @@ const fs = require('fs');
 const path = require('path');
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = 3001;
 
-// Middleware for JSON parsing
+// Middleware
+app.use(express.static('public'));
 app.use(express.json());
 
-// Serve static files
-app.use(express.static('public'));
+// Route files to client via HTTP request
+//need to figure out how the * can be implemented for index.html path
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
 
-// API Routes
+app.get('/notes', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'notes.html'));
+});
+
+// Establish API routes
+app.get('/api/notes', (req, res) => {
+    fs.readFile(path.join(__dirname, 'db', 'notes.json'), 'utf8', (error, data) => {
+      error ? console.error(error) : res.json(JSON.parse(data));
+    });
+});
+
+// Start the server
+app.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
+});
