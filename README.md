@@ -22,4 +22,12 @@ This project is Robert Gosselin's eleventh web application challenge. This proje
 ## Credits
 Starter code Repo: https://github.com/coding-boot-camp/miniature-eureka
 
+Utilized notes taken during lecture of module 10 and 11 for reference on express/node syntaxes and routing operations
+
+req.body:
+    https://visheshism.medium.com/simplifying-data-input-in-express-an-overview-of-req-params-req-query-and-req-body-179ab07b2256#:~:text=body%3A-,The%20req.,json%20middleware.
+
+date.now():
+    https://stackoverflow.com/questions/8012002/create-a-unique-number-with-javascript-time
+
 ## Questions
