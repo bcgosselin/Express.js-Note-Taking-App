@@ -50,7 +50,7 @@ app.post('/api/notes', (req, res) => {
   });
 });
 
-// index.html for any unspecified route
+// Route index.html for any unspecified route
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
