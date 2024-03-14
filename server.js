@@ -10,13 +10,17 @@ app.use(express.static('public'));
 app.use(express.json());
 
 // Route files to client via HTTP request
-// need to figure out how the * can be implemented for index.html path
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 app.get('/notes', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'notes.html'));
+});
+
+// Route index.html for any unspecified route
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 // Establish API routes
