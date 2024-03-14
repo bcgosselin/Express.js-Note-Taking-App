@@ -5,7 +5,7 @@ https://bcgosselin.github.io/note-taking-app/
 ## Description
 This project is Robert Gosselin's eleventh web application challenge. This project was created to showcase his skills and aptitude using only text based instructions. This webpage was given a starter code and the given starter code was updated by hand utilizing credited resources [Credits](#credits). The goal of this challenge was to develop and engineer a note taking application on a live website. Everything included was apart of an ongoing bootcamp to develop and hone Full Stack Web Development skills.
 
-## Table of Contents (Optional)
+## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -14,13 +14,13 @@ This project is Robert Gosselin's eleventh web application challenge. This proje
 
 ## Installation
 
-NA
+To run this application locally it requires Node.js and Express.js
 
 ## Usage
 
 Feel free to view below screenshot (ctrl + click).
 
-![alt text](assets/images/screenshot.png)
+![alt text](public/assets/images/screenshot.png)
 
 ## Credits
 

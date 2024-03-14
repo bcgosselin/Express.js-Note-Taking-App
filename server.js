@@ -18,11 +18,6 @@ app.get('/notes', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'notes.html'));
 });
 
-// Route index.html for any unspecified route
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
-});
-
 // Establish API routes
 app.get('/api/notes', (req, res) => {
     fs.readFile(path.join(__dirname, 'db', 'notes.json'), 'utf8', (error, data) => {
@@ -54,6 +49,12 @@ app.post('/api/notes', (req, res) => {
       });
   });
 });
+
+// index.html for any unspecified route
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
 
 // Start the server
 app.listen(PORT, () => {
