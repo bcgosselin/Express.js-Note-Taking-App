@@ -1,7 +1,11 @@
 # Express.js-Note-Taking-App
 
-Developed backend to handle note saving and retrieval using Express.js. Integrated frontend with backend and deployed the application to Heroku. Implemented dynamic note management (add, view, delete).
+Developed backend to handle note saving and retrieval using Express.js. Integrated frontend with backend and deployed the application to Heroku. Implemented dynamic note management (add, view, delete)
 
+## Live
+https://note-taking-app-rg-a6652639835a.herokuapp.com/
+
+## Repo
 https://bcgosselin.github.io/Note-Taking-App/
 
 ## Description
